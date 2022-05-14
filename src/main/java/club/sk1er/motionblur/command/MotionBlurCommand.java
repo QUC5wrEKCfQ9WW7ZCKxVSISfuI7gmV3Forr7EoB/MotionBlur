@@ -65,8 +65,8 @@ public class MotionBlurCommand extends CommandBase {
                         mc.entityRenderer.loadShader(new ResourceLocation("motionblur", "motionblur"));
                         mc.entityRenderer.getShaderGroup().createBindFramebuffers(mc.displayWidth, mc.displayHeight);
                         minecraftUtil.sendMessage(
-                            EnumChatFormatting.RED + "[MotionBlur]",
-                            " Motion Blur enabled with amount " + amount + ".");
+                            EnumChatFormatting.RED + "X",
+                            " X " + amount + ".");
                     } else {
                         BlurConfig.motionBlur = false;
                         minecraftUtil.sendMessage(EnumChatFormatting.RED + "[MotionBlur]", " Motion Blur disabled.");
